@@ -10,7 +10,7 @@ def worker(feed):
             feed["last_runtime"].value = time.time()
         feed["cur_count"].value += 1
     
-    feed["func"](feed["func_feed"])
+    return feed["func"](feed["func_feed"])
 
 def rate_limited_multiprocessing(func, func_feed, rate_limit_per_second=1):
     max_cpu = cpu_count()
