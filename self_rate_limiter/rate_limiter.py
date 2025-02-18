@@ -23,6 +23,3 @@ def rate_limited_multiprocessing(func, func_feed, rate_limit_per_second=1):
     
     with Pool(processes=max_cpu) as pool:
         results = pool.map(worker, [ {"max_count": max_count, "cur_count": cur_count, "last_runtime": last_runtime, "lock": lock, "func": func, "func_feed": f}  for f in func_feed])
-
-if __name__ == "__main__":
-    rate_limited_multiprocessing(todo, [{'a': i, 'b': i+1} for i in range(100)], rate_limit_per_second=10)
