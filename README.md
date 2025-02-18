@@ -2,7 +2,7 @@
 It is a collection of helper modules that I frequently use during development. Feel free to take reference from any of them.
 
 Modules:
-[Markdown - Link] [self_rate_limiter](https://github.com/vibing-onion/devBoost/tree/master#self_rate_limiter)
+[self_rate_limiter](https://github.com/vibing-onion/devBoost/tree/master#self_rate_limiter)
 
 ### self_rate_limiter
 function:
